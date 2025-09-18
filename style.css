@@ -2,30 +2,6 @@ body{
     background: #FFECC0;
     overflow-x: hidden;
 }
-/*
-header{
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 1000;
-    height: 100%;
-    width: 35rem;
-    background: #DDF4E7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    text-align: center;
-}
-
-header .user img{
-    height: 17rem;
-    width: 17rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: .7rem solid var(--pink);
-} */
 
 *{
     padding: 0;
