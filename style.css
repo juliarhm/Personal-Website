@@ -1,0 +1,162 @@
+body{
+    background: #FFECC0;
+    overflow-x: hidden;
+}
+/*
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #DDF4E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--pink);
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+
+nav{
+    padding-right: 30px;
+}
+
+nav a{
+    float: right;
+    font-size: 2rem;
+    color: azure;
+    margin-left: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* about me */
+.about.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 10%;
+}
+.about-text{
+    flex: 1;
+}
+.about-text h1{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+}
+.about-text p{
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #333;
+}
+.about-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.about-img img{
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* contact */
+.contact.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text a{
+    text-decoration: none;
+    color: rgb(108, 120, 120);
+}
+
+.contact-text p {
+    font-size: 2.5rem;
+    margin: 10px;
+    line-height: 1.8;
+    color: #333;
+}
+.contact-text h1{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+}
+
+.contact-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img img {
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
